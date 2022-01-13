@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+button img{
+    width: 6vw;
+    margin: 1px
+}
+html {
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+.mobile-menu {
+    height: 0px;
+}
+
+#dropdown-button {
+    width: 5px;
+}
+
+#title {
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-text {
+    font-family: 'arial';
+    font-weight: bold;
+    color: white;
+    width: 90vw;
+    font-size: 3em;
+}
+
+.banner-text-min {
+    font-weight: lighter;
+    color: white;
+    width: 90vw;
+    font-size: 1.1em;
+}
+
+.box-text {
+    padding: 5%;
+    width: 90%;
+}
+
+ul {
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+}
+
+li {
+    padding: 10px;
+}
+
+.menu {
+    margin-top: 1%;
+}
+
+#banner {
+    width: 100%;
+    height: 77vh;
+    background: url(assets/laranja\ azul\ recorte@2x.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+@media (min-width: 576px) {}
+
+// Dispositivos médios (tablets com 768px ou mais)
+@media (min-width: 768px) {
+    ...
+}
+
+// Dispositivos large (desktops com 992px ou mais)
+@media (min-width: 992px) {
+    ...
+}
+
+// Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (min-width: 1200px) {
+    ...
+}

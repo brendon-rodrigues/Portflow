@@ -78,6 +78,9 @@ li {
     justify-content: end;
     align-items: center;
 }
+div img{
+    padding: 6%;
+}
 
 @media (min-width: 576px) {}
 
@@ -91,7 +94,9 @@ li {
     ...
 }
 
-// Dispositivos extra large (desktops grandes com 1200px ou mais)
+
 @media (min-width: 1200px) {
-    ...
+    div img{
+    padding: 2%;
+}
 }

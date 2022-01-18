@@ -4,17 +4,23 @@
     padding: 0;
 }
 
-button {
+#button-menu {
     background: none;
     border: none;
 }
-button img{
+
+#button-menu img {
     width: 6vw;
     margin: 1px
 }
+
 html {
     font-size: 16px;
     font-family: 'Montserrat';
+}
+
+#nav-mobile {
+    z-index: 2;
 }
 
 .mobile-menu {
@@ -78,8 +84,53 @@ li {
     justify-content: end;
     align-items: center;
 }
-div img{
-    padding: 6%;
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*! padding: 50px; */
+    padding: 20px 50px 50px 50px;
+}
+
+#gallery img {
+    margin-top: 10%;
+}
+
+.social-media {
+    background: #7FDBD4;
+    height: 6vh;
+    width: 88%;
+    margin: -8px 0px 14px 21px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media img {
+    padding: 3%;
+}
+
+.footer-text-box {
+    padding: 14%;
+    /*! width: 100%; */
+    font-size: 0.9em;
+}
+
+.footer-text-box h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#footer-button {
+    background: #333333;
+    color: #CCCCCC;
+    width: 20vw;
+    border: none;
+    padding: 5px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
 }
 
 @media (min-width: 576px) {}
@@ -94,9 +145,74 @@ div img{
     ...
 }
 
-
 @media (min-width: 1200px) {
-    div img{
-    padding: 2%;
-}
+    .mobile-menu{
+        display: none;
+    }
+    ul{
+        display: flex;
+    }
+    #title {
+        margin-top: 2%;
+        align-items: baseline;
+        font-size: 1.4em;
+        font-weight: bold;
+        width: 100%;
+        text-align: left;
+    }
+    #banner {
+        width: 100%;
+        height: 64vh;
+        background: url(assets/laranja\ azul\ recorte.png);
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    #gallery img {
+        margin-top: 1%;
+        
+    }
+    .social-media {
+        background: none;
+        height: 12vh;
+        width: 70%;
+        margin: -8px 0px 14px 21px; 
+    }
+    
+    .social-media img {
+        padding: 2%;
+    }
+    
+    .footer-text-box {
+        padding: 14%;
+        /*! width: 100%; */
+        font-size: 0.9em;
+    }
+    
+    .footer-text-box h3 {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    
+    #footer-button {
+        background: #333333;
+        color: #CCCCCC;
+        width: 20vw;
+        border: none;
+        padding: 5px;
+        position: absolute;
+        top: 73%;
+        left: 50%;
+    }
+
+
 }
